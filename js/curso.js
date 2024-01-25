@@ -14,6 +14,6 @@ document.addEventListener("DOMContentLoaded", function(){
     elemento_nome_curso.innerHTML = localStorage.getItem("nome-curso");
     elemento_descricao_curso.innerHTML = "Nível: " + localStorage.getItem("nivel-curso");
     elemento_tempo_curso.innerHTML = localStorage.getItem("tempo-curso");
-    elemento_imagem_curso.src = elemento_localStorage.getItem("imagem-curso");
+    elemento_imagem_curso.src = localStorage.getItem("imagem-curso");
     
 });
