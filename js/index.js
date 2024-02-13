@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", function(){
         let email = document.querySelector('#email').value;
         let senha = document.querySelector('#senha').value;
 
-        if (email === 'email@meuprimeiroacorde.com.br' && senha === '123senha') {
+        if (email === 'email@acordelab.com.br' && senha === '123senha') {
             mensagemErro.style.display = 'none';
             window.location.href = 'home.html';
         } else {
