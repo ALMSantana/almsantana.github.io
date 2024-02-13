@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function(event){
             localStorage.setItem("nivel-curso", antecessorChamador.querySelector(".nivel-curso").innerHTML);
             localStorage.setItem("tempo-curso", antecessorChamador.querySelector(".tempo-curso").innerHTML);
             localStorage.setItem("imagem-curso", antecessorChamador.querySelector("img").getAttribute('src'));
-            location.href = "curso.html";
+            location.href = "cursos.html";
         });
     }
 

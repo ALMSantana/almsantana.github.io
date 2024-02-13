@@ -154,6 +154,7 @@ main{
     flex-direction: column;
     border: 0.1rem solid #E9394E;
     flex-shrink: 0;
+    cursor: pointer;
 }
 
 
