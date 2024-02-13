@@ -166,7 +166,8 @@ header {
     -webkit-appearance: none; 
     -moz-appearance: none; 
          appearance: none; 
-    box-shadow: 0 0 0.1rem gray, 0 0 0.1rem gray, 0 0 0.1rem #2C4154    ;
+    box-shadow: 0 0.5rem 0.4rem rgba(0, 0, 0, 0.1);
+    border: 0.02rem solid #E9394E;
     
 }
 
@@ -188,7 +189,7 @@ progress[value]::-moz-progress-bar {
     border: none;
     padding: 0.5rem 1rem;
     cursor: pointer;
-    max-width: 20%;
+    max-width: 25%;
     align-self: flex-end;
     border-radius: 0.5rem;
     margin-top: 1rem;
