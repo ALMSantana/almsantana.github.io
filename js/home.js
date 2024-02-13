@@ -3,17 +3,21 @@ document.addEventListener("DOMContentLoaded", function(event){
     let cursos = document.querySelectorAll('.course-card');
     let botoes_cursos = document.querySelectorAll(".selecionar-curso");
 
+
     for (um_curso of botoes_cursos){
         um_curso.addEventListener("click", function(evento){
             let chamador = evento.target;
             let antecessorChamador = chamador.parentNode;
             localStorage.setItem("nome-curso", antecessorChamador.querySelector(".nome-curso").innerHTML);
+            localStorage.setItem("instrumento-curso", antecessorChamador.querySelector(".instrumento-curso").innerHTML);
             localStorage.setItem("nivel-curso", antecessorChamador.querySelector(".nivel-curso").innerHTML);
             localStorage.setItem("tempo-curso", antecessorChamador.querySelector(".tempo-curso").innerHTML);
             localStorage.setItem("imagem-curso", antecessorChamador.querySelector("img").getAttribute('src'));
             location.href = "curso.html";
         });
     }
+
+
 
     function filtrarCursos(instrument) {
         cursos.forEach(function(curso) {
@@ -49,11 +53,6 @@ document.addEventListener("DOMContentLoaded", function(event){
         }
     });
 
-    document.querySelector('#todos').addEventListener('change', function() {
-        if(this.checked) {
-            limparFiltro();
-        }
-    });
 
     function filtroBusca(barraBusca) {
         let cursos = document.querySelectorAll('.course-card');
