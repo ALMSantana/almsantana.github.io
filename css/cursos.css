@@ -198,8 +198,9 @@ progress[value]::-moz-progress-bar {
 .curso-conteudo {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    overflow: scroll;
+    width: 95%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
 }
 
 .conteudo-item {
