@@ -145,6 +145,7 @@ main{
     border-radius: 10px;
     overflow: hidden;
     width: 20%;
+    min-width: 250px;
     margin: 2.5%;
     padding: 1rem;
     padding-top: 0; 
